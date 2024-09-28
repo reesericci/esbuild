@@ -1,4 +1,4 @@
-module github.com/evanw/esbuild
+module github.com/reesericci/esbuild
 
 // Support for Go 1.13 is deliberate so people can build esbuild
 // themselves for old OS versions. Please do not change this.
