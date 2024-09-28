@@ -6,7 +6,7 @@ GO_FLAGS += "-ldflags=-s -w"
 # Avoid embedding the build path in the executable for more reproducible builds
 GO_FLAGS += -trimpath
 
-esbuild: version-go cmd/esbuild/*.go pkg/*/*.go internal/*/*.go go.mod
+esbuild: version-go cmd/esbuild/*.go pkg/*/*.go go.mod
 	CGO_ENABLED=0 go build $(GO_FLAGS) ./cmd/esbuild
 
 test:
@@ -40,16 +40,16 @@ check-go-version:
 # variable like this: "ESBUILD_RACE=-race make test". Or you can permanently
 # enable it by adding "export ESBUILD_RACE=-race" to your shell profile.
 test-go:
-	go test $(ESBUILD_RACE) ./internal/... ./pkg/...
+	go test $(ESBUILD_RACE) /pkg/...
 
 vet-go:
-	go vet ./cmd/... ./internal/... ./pkg/...
+	go vet ./cmd/... ./pkg/...
 
 fmt-go:
-	test -z "$(shell go fmt ./cmd/... ./internal/... ./pkg/... )"
+	test -z "$(shell go fmt ./cmd/... ./pkg/... )"
 
 no-filepath:
-	@! grep --color --include '*.go' -r '"path/filepath"' cmd internal pkg || ( \
+	@! grep --color --include '*.go' -r '"path/filepath"' cmd pkg || ( \
 		echo 'error: Use of "path/filepath" is disallowed. See http://golang.org/issue/43768.' && false)
 
 # This uses "env -i" to run in a clean environment with no environment
@@ -58,7 +58,7 @@ no-filepath:
 # 1.17.2, which will crash when run in an environment with over 4096
 # bytes of environment variable data such as GitHub Actions.
 test-wasm-node: esbuild
-	env -i $(shell go env) PATH="$(shell go env GOROOT)/misc/wasm:$(PATH)" GOOS=js GOARCH=wasm go test ./internal/...
+	env -i $(shell go env) PATH="$(shell go env GOROOT)/misc/wasm:$(PATH)" GOOS=js GOARCH=wasm go test ./pkg/...
 	node scripts/wasm-tests.js
 
 test-wasm-browser: platform-wasm | scripts/browser/node_modules
