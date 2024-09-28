@@ -4,7 +4,7 @@
 package main
 
 import (
-	"github.com/reesericci/esbuild/logger"
+	"github.com/reesericci/esbuild/pkg/logger"
 )
 
 // Remove this code from the WebAssembly binary to reduce size. This only removes 0.4mb of stuff.

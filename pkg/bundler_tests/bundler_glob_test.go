@@ -3,7 +3,7 @@ package bundler_tests
 import (
 	"testing"
 
-	"github.com/reesericci/esbuild/config"
+	"github.com/reesericci/esbuild/pkg/config"
 )
 
 var glob_suite = suite{

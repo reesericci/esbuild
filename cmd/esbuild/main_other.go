@@ -9,7 +9,7 @@ import (
 	"runtime/pprof"
 	"runtime/trace"
 
-	"github.com/reesericci/esbuild/logger"
+	"github.com/reesericci/esbuild/pkg/logger"
 )
 
 func createTraceFile(osArgs []string, traceFile string) func() {

@@ -4,8 +4,8 @@ import (
 	"regexp"
 	"testing"
 
-	"github.com/reesericci/esbuild/compat"
-	"github.com/reesericci/esbuild/config"
+	"github.com/reesericci/esbuild/pkg/compat"
+	"github.com/reesericci/esbuild/pkg/config"
 )
 
 var dce_suite = suite{

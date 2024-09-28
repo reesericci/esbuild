@@ -4,9 +4,9 @@ import (
 	"bytes"
 	"unicode/utf8"
 
-	"github.com/reesericci/esbuild/ast"
-	"github.com/reesericci/esbuild/helpers"
-	"github.com/reesericci/esbuild/logger"
+	"github.com/reesericci/esbuild/pkg/ast"
+	"github.com/reesericci/esbuild/pkg/helpers"
+	"github.com/reesericci/esbuild/pkg/logger"
 )
 
 type Mapping struct {

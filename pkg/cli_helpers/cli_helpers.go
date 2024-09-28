@@ -6,7 +6,7 @@ package cli_helpers
 import (
 	"fmt"
 
-	"github.com/reesericci/esbuild/api"
+	"github.com/reesericci/esbuild/pkg/api"
 )
 
 type ErrorWithNote struct {

@@ -3,8 +3,8 @@ package bundler_tests
 import (
 	"testing"
 
-	"github.com/reesericci/esbuild/compat"
-	"github.com/reesericci/esbuild/config"
+	"github.com/reesericci/esbuild/pkg/compat"
+	"github.com/reesericci/esbuild/pkg/config"
 )
 
 var css_suite = suite{

@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/reesericci/esbuild/ast"
-	"github.com/reesericci/esbuild/helpers"
-	"github.com/reesericci/esbuild/js_ast"
-	"github.com/reesericci/esbuild/logger"
-	"github.com/reesericci/esbuild/sourcemap"
+	"github.com/reesericci/esbuild/pkg/ast"
+	"github.com/reesericci/esbuild/pkg/helpers"
+	"github.com/reesericci/esbuild/pkg/js_ast"
+	"github.com/reesericci/esbuild/pkg/logger"
+	"github.com/reesericci/esbuild/pkg/sourcemap"
 )
 
 // Specification: https://sourcemaps.info/spec.html

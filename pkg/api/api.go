@@ -19,7 +19,7 @@
 //	import (
 //	    "os"
 //
-//	    "github.com/reesericci/esbuild/api"
+//	    "github.com/reesericci/esbuild/pkg/api"
 //	)
 //
 //	func main() {
@@ -51,7 +51,7 @@
 //	    "fmt"
 //	    "os"
 //
-//	    "github.com/reesericci/esbuild/api"
+//	    "github.com/reesericci/esbuild/pkg/api"
 //	)
 //
 //	func main() {
@@ -79,7 +79,7 @@ package api
 import (
 	"time"
 
-	"github.com/reesericci/esbuild/logger"
+	"github.com/reesericci/esbuild/pkg/logger"
 )
 
 type SourceMap uint8

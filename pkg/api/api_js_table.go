@@ -2,7 +2,7 @@
 
 package api
 
-import "github.com/reesericci/esbuild/compat"
+import "github.com/reesericci/esbuild/pkg/compat"
 
 type EngineName uint8
 

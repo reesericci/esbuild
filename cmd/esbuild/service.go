@@ -15,13 +15,13 @@ import (
 	"sync"
 	"time"
 
-	"github.com/reesericci/esbuild/cli_helpers"
-	"github.com/reesericci/esbuild/config"
-	"github.com/reesericci/esbuild/fs"
-	"github.com/reesericci/esbuild/helpers"
-	"github.com/reesericci/esbuild/logger"
-	"github.com/reesericci/esbuild/api"
-	"github.com/reesericci/esbuild/cli"
+	"github.com/reesericci/esbuild/pkg/cli_helpers"
+	"github.com/reesericci/esbuild/pkg/config"
+	"github.com/reesericci/esbuild/pkg/fs"
+	"github.com/reesericci/esbuild/pkg/helpers"
+	"github.com/reesericci/esbuild/pkg/logger"
+	"github.com/reesericci/esbuild/pkg/api"
+	"github.com/reesericci/esbuild/pkg/cli"
 )
 
 type responseCallback func(interface{})

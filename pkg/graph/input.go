@@ -8,13 +8,13 @@ package graph
 // things organized.
 
 import (
-	"github.com/reesericci/esbuild/ast"
-	"github.com/reesericci/esbuild/config"
-	"github.com/reesericci/esbuild/css_ast"
-	"github.com/reesericci/esbuild/js_ast"
-	"github.com/reesericci/esbuild/logger"
-	"github.com/reesericci/esbuild/resolver"
-	"github.com/reesericci/esbuild/sourcemap"
+	"github.com/reesericci/esbuild/pkg/ast"
+	"github.com/reesericci/esbuild/pkg/config"
+	"github.com/reesericci/esbuild/pkg/css_ast"
+	"github.com/reesericci/esbuild/pkg/js_ast"
+	"github.com/reesericci/esbuild/pkg/logger"
+	"github.com/reesericci/esbuild/pkg/resolver"
+	"github.com/reesericci/esbuild/pkg/sourcemap"
 )
 
 type InputFile struct {

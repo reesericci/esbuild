@@ -6,9 +6,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/reesericci/esbuild/css_ast"
-	"github.com/reesericci/esbuild/css_lexer"
-	"github.com/reesericci/esbuild/logger"
+	"github.com/reesericci/esbuild/pkg/css_ast"
+	"github.com/reesericci/esbuild/pkg/css_lexer"
+	"github.com/reesericci/esbuild/pkg/logger"
 )
 
 func (p *parser) tryToReduceCalcExpression(token css_ast.Token) css_ast.Token {

@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/reesericci/esbuild/ast"
-	"github.com/reesericci/esbuild/js_ast"
-	"github.com/reesericci/esbuild/js_printer"
-	"github.com/reesericci/esbuild/logger"
-	"github.com/reesericci/esbuild/test"
+	"github.com/reesericci/esbuild/pkg/ast"
+	"github.com/reesericci/esbuild/pkg/js_ast"
+	"github.com/reesericci/esbuild/pkg/js_printer"
+	"github.com/reesericci/esbuild/pkg/logger"
+	"github.com/reesericci/esbuild/pkg/test"
 )
 
 func expectParseErrorJSON(t *testing.T, contents string, expected string) {

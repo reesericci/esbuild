@@ -5,9 +5,9 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/reesericci/esbuild/ast"
-	"github.com/reesericci/esbuild/helpers"
-	"github.com/reesericci/esbuild/js_ast"
+	"github.com/reesericci/esbuild/pkg/ast"
+	"github.com/reesericci/esbuild/pkg/helpers"
+	"github.com/reesericci/esbuild/pkg/js_ast"
 )
 
 var processedGlobalsMutex sync.Mutex

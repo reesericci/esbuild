@@ -3,12 +3,12 @@ package js_parser
 import (
 	"fmt"
 
-	"github.com/reesericci/esbuild/ast"
-	"github.com/reesericci/esbuild/compat"
-	"github.com/reesericci/esbuild/config"
-	"github.com/reesericci/esbuild/helpers"
-	"github.com/reesericci/esbuild/js_ast"
-	"github.com/reesericci/esbuild/logger"
+	"github.com/reesericci/esbuild/pkg/ast"
+	"github.com/reesericci/esbuild/pkg/compat"
+	"github.com/reesericci/esbuild/pkg/config"
+	"github.com/reesericci/esbuild/pkg/helpers"
+	"github.com/reesericci/esbuild/pkg/js_ast"
+	"github.com/reesericci/esbuild/pkg/logger"
 )
 
 func (p *parser) privateSymbolNeedsToBeLowered(private *js_ast.EPrivateIdentifier) bool {

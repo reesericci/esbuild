@@ -6,7 +6,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/reesericci/esbuild/logger"
+	"github.com/reesericci/esbuild/pkg/logger"
 )
 
 type Timer struct {

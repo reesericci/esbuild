@@ -4,7 +4,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/reesericci/esbuild/helpers"
+	"github.com/reesericci/esbuild/pkg/helpers"
 )
 
 type D uint16

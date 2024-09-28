@@ -5,14 +5,14 @@ import (
 	"strings"
 	"unicode/utf8"
 
-	"github.com/reesericci/esbuild/ast"
-	"github.com/reesericci/esbuild/compat"
-	"github.com/reesericci/esbuild/config"
-	"github.com/reesericci/esbuild/css_ast"
-	"github.com/reesericci/esbuild/css_lexer"
-	"github.com/reesericci/esbuild/helpers"
-	"github.com/reesericci/esbuild/logger"
-	"github.com/reesericci/esbuild/sourcemap"
+	"github.com/reesericci/esbuild/pkg/ast"
+	"github.com/reesericci/esbuild/pkg/compat"
+	"github.com/reesericci/esbuild/pkg/config"
+	"github.com/reesericci/esbuild/pkg/css_ast"
+	"github.com/reesericci/esbuild/pkg/css_lexer"
+	"github.com/reesericci/esbuild/pkg/helpers"
+	"github.com/reesericci/esbuild/pkg/logger"
+	"github.com/reesericci/esbuild/pkg/sourcemap"
 )
 
 const quoteForURL byte = 0

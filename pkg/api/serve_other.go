@@ -28,9 +28,9 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/reesericci/esbuild/fs"
-	"github.com/reesericci/esbuild/helpers"
-	"github.com/reesericci/esbuild/logger"
+	"github.com/reesericci/esbuild/pkg/fs"
+	"github.com/reesericci/esbuild/pkg/helpers"
+	"github.com/reesericci/esbuild/pkg/logger"
 )
 
 ////////////////////////////////////////////////////////////////////////////////

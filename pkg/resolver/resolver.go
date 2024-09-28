@@ -10,14 +10,14 @@ import (
 	"sync"
 	"syscall"
 
-	"github.com/reesericci/esbuild/ast"
-	"github.com/reesericci/esbuild/cache"
-	"github.com/reesericci/esbuild/compat"
-	"github.com/reesericci/esbuild/config"
-	"github.com/reesericci/esbuild/fs"
-	"github.com/reesericci/esbuild/helpers"
-	"github.com/reesericci/esbuild/js_ast"
-	"github.com/reesericci/esbuild/logger"
+	"github.com/reesericci/esbuild/pkg/ast"
+	"github.com/reesericci/esbuild/pkg/cache"
+	"github.com/reesericci/esbuild/pkg/compat"
+	"github.com/reesericci/esbuild/pkg/config"
+	"github.com/reesericci/esbuild/pkg/fs"
+	"github.com/reesericci/esbuild/pkg/helpers"
+	"github.com/reesericci/esbuild/pkg/js_ast"
+	"github.com/reesericci/esbuild/pkg/logger"
 )
 
 var defaultMainFields = map[config.Platform][]string{

@@ -8,10 +8,10 @@ import (
 	"strings"
 	"syscall"
 
-	"github.com/reesericci/esbuild/helpers"
-	"github.com/reesericci/esbuild/js_ast"
-	"github.com/reesericci/esbuild/js_parser"
-	"github.com/reesericci/esbuild/logger"
+	"github.com/reesericci/esbuild/pkg/helpers"
+	"github.com/reesericci/esbuild/pkg/js_ast"
+	"github.com/reesericci/esbuild/pkg/js_parser"
+	"github.com/reesericci/esbuild/pkg/logger"
 )
 
 type pnpData struct {

@@ -8,9 +8,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/reesericci/esbuild/api_helpers"
-	"github.com/reesericci/esbuild/logger"
-	"github.com/reesericci/esbuild/cli"
+	"github.com/reesericci/esbuild/pkg/api_helpers"
+	"github.com/reesericci/esbuild/pkg/logger"
+	"github.com/reesericci/esbuild/pkg/cli"
 )
 
 var helpText = func(colors logger.Colors) string {

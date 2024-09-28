@@ -4,13 +4,13 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/reesericci/esbuild/ast"
-	"github.com/reesericci/esbuild/compat"
-	"github.com/reesericci/esbuild/config"
-	"github.com/reesericci/esbuild/js_parser"
-	"github.com/reesericci/esbuild/logger"
-	"github.com/reesericci/esbuild/renamer"
-	"github.com/reesericci/esbuild/test"
+	"github.com/reesericci/esbuild/pkg/ast"
+	"github.com/reesericci/esbuild/pkg/compat"
+	"github.com/reesericci/esbuild/pkg/config"
+	"github.com/reesericci/esbuild/pkg/js_parser"
+	"github.com/reesericci/esbuild/pkg/logger"
+	"github.com/reesericci/esbuild/pkg/renamer"
+	"github.com/reesericci/esbuild/pkg/test"
 )
 
 func expectPrintedCommon(t *testing.T, name string, contents string, expected string, options config.Options) {

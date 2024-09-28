@@ -3,7 +3,7 @@
 package compat
 
 import (
-	"github.com/reesericci/esbuild/css_ast"
+	"github.com/reesericci/esbuild/pkg/css_ast"
 )
 
 type CSSFeature uint16

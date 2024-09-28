@@ -8,12 +8,12 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/reesericci/esbuild/config"
-	"github.com/reesericci/esbuild/helpers"
-	"github.com/reesericci/esbuild/js_ast"
-	"github.com/reesericci/esbuild/js_lexer"
-	"github.com/reesericci/esbuild/js_parser"
-	"github.com/reesericci/esbuild/logger"
+	"github.com/reesericci/esbuild/pkg/config"
+	"github.com/reesericci/esbuild/pkg/helpers"
+	"github.com/reesericci/esbuild/pkg/js_ast"
+	"github.com/reesericci/esbuild/pkg/js_lexer"
+	"github.com/reesericci/esbuild/pkg/js_parser"
+	"github.com/reesericci/esbuild/pkg/logger"
 )
 
 type packageJSON struct {

@@ -3,10 +3,10 @@ package css_parser
 import (
 	"fmt"
 
-	"github.com/reesericci/esbuild/ast"
-	"github.com/reesericci/esbuild/compat"
-	"github.com/reesericci/esbuild/css_ast"
-	"github.com/reesericci/esbuild/logger"
+	"github.com/reesericci/esbuild/pkg/ast"
+	"github.com/reesericci/esbuild/pkg/compat"
+	"github.com/reesericci/esbuild/pkg/css_ast"
+	"github.com/reesericci/esbuild/pkg/logger"
 )
 
 func (p *parser) lowerNestingInRule(rule css_ast.Rule, results []css_ast.Rule) []css_ast.Rule {

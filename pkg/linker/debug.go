@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/reesericci/esbuild/ast"
-	"github.com/reesericci/esbuild/graph"
-	"github.com/reesericci/esbuild/helpers"
-	"github.com/reesericci/esbuild/js_ast"
+	"github.com/reesericci/esbuild/pkg/ast"
+	"github.com/reesericci/esbuild/pkg/graph"
+	"github.com/reesericci/esbuild/pkg/helpers"
+	"github.com/reesericci/esbuild/pkg/js_ast"
 )
 
 // Set this to true and then load the resulting metafile in "graph-debugger.html"

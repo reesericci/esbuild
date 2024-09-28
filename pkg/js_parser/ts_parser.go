@@ -8,12 +8,12 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/reesericci/esbuild/ast"
-	"github.com/reesericci/esbuild/compat"
-	"github.com/reesericci/esbuild/helpers"
-	"github.com/reesericci/esbuild/js_ast"
-	"github.com/reesericci/esbuild/js_lexer"
-	"github.com/reesericci/esbuild/logger"
+	"github.com/reesericci/esbuild/pkg/ast"
+	"github.com/reesericci/esbuild/pkg/compat"
+	"github.com/reesericci/esbuild/pkg/helpers"
+	"github.com/reesericci/esbuild/pkg/js_ast"
+	"github.com/reesericci/esbuild/pkg/js_lexer"
+	"github.com/reesericci/esbuild/pkg/logger"
 )
 
 func (p *parser) skipTypeScriptBinding() {

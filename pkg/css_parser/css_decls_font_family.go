@@ -3,8 +3,8 @@ package css_parser
 import (
 	"strings"
 
-	"github.com/reesericci/esbuild/css_ast"
-	"github.com/reesericci/esbuild/css_lexer"
+	"github.com/reesericci/esbuild/pkg/css_ast"
+	"github.com/reesericci/esbuild/pkg/css_lexer"
 )
 
 // These keywords usually require special handling when parsing.

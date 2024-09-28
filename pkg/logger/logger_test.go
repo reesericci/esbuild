@@ -3,8 +3,8 @@ package logger_test
 import (
 	"testing"
 
-	"github.com/reesericci/esbuild/logger"
-	"github.com/reesericci/esbuild/test"
+	"github.com/reesericci/esbuild/pkg/logger"
+	"github.com/reesericci/esbuild/pkg/test"
 )
 
 func TestMsgIDs(t *testing.T) {

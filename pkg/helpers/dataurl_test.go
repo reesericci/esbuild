@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/reesericci/esbuild/helpers"
+	"github.com/reesericci/esbuild/pkg/helpers"
 )
 
 func TestEncodeDataURL(t *testing.T) {

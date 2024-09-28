@@ -4,7 +4,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/reesericci/esbuild/ast"
+	"github.com/reesericci/esbuild/pkg/ast"
 )
 
 type v struct {

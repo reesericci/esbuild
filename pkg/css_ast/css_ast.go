@@ -4,10 +4,10 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/reesericci/esbuild/ast"
-	"github.com/reesericci/esbuild/css_lexer"
-	"github.com/reesericci/esbuild/helpers"
-	"github.com/reesericci/esbuild/logger"
+	"github.com/reesericci/esbuild/pkg/ast"
+	"github.com/reesericci/esbuild/pkg/css_lexer"
+	"github.com/reesericci/esbuild/pkg/helpers"
+	"github.com/reesericci/esbuild/pkg/logger"
 )
 
 // CSS syntax comes in two layers: a minimal syntax that generally accepts

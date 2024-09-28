@@ -7,11 +7,11 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/reesericci/esbuild/config"
-	"github.com/reesericci/esbuild/fs"
-	"github.com/reesericci/esbuild/js_parser"
-	"github.com/reesericci/esbuild/logger"
-	"github.com/reesericci/esbuild/test"
+	"github.com/reesericci/esbuild/pkg/config"
+	"github.com/reesericci/esbuild/pkg/fs"
+	"github.com/reesericci/esbuild/pkg/js_parser"
+	"github.com/reesericci/esbuild/pkg/logger"
+	"github.com/reesericci/esbuild/pkg/test"
 )
 
 type pnpTestExpectation struct {
