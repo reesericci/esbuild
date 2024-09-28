@@ -8,8 +8,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/evanw/esbuild/internal/api_helpers"
-	"github.com/evanw/esbuild/internal/logger"
+	"github.com/reesericci/esbuild/api_helpers"
+	"github.com/reesericci/esbuild/logger"
 	"github.com/evanw/esbuild/pkg/cli"
 )
 
