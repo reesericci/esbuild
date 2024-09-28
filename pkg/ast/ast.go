@@ -7,8 +7,8 @@ package ast
 import (
 	"sort"
 
-	"github.com/evanw/esbuild/internal/helpers"
-	"github.com/evanw/esbuild/internal/logger"
+	"github.com/reesericci/esbuild/helpers"
+	"github.com/reesericci/esbuild/logger"
 )
 
 type ImportKind uint8

@@ -19,26 +19,26 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/evanw/esbuild/internal/ast"
-	"github.com/evanw/esbuild/internal/bundler"
-	"github.com/evanw/esbuild/internal/compat"
-	"github.com/evanw/esbuild/internal/config"
-	"github.com/evanw/esbuild/internal/css_ast"
-	"github.com/evanw/esbuild/internal/css_lexer"
-	"github.com/evanw/esbuild/internal/css_parser"
-	"github.com/evanw/esbuild/internal/css_printer"
-	"github.com/evanw/esbuild/internal/fs"
-	"github.com/evanw/esbuild/internal/graph"
-	"github.com/evanw/esbuild/internal/helpers"
-	"github.com/evanw/esbuild/internal/js_ast"
-	"github.com/evanw/esbuild/internal/js_lexer"
-	"github.com/evanw/esbuild/internal/js_printer"
-	"github.com/evanw/esbuild/internal/logger"
-	"github.com/evanw/esbuild/internal/renamer"
-	"github.com/evanw/esbuild/internal/resolver"
-	"github.com/evanw/esbuild/internal/runtime"
-	"github.com/evanw/esbuild/internal/sourcemap"
-	"github.com/evanw/esbuild/internal/xxhash"
+	"github.com/reesericci/esbuild/ast"
+	"github.com/reesericci/esbuild/bundler"
+	"github.com/reesericci/esbuild/compat"
+	"github.com/reesericci/esbuild/config"
+	"github.com/reesericci/esbuild/css_ast"
+	"github.com/reesericci/esbuild/css_lexer"
+	"github.com/reesericci/esbuild/css_parser"
+	"github.com/reesericci/esbuild/css_printer"
+	"github.com/reesericci/esbuild/fs"
+	"github.com/reesericci/esbuild/graph"
+	"github.com/reesericci/esbuild/helpers"
+	"github.com/reesericci/esbuild/js_ast"
+	"github.com/reesericci/esbuild/js_lexer"
+	"github.com/reesericci/esbuild/js_printer"
+	"github.com/reesericci/esbuild/logger"
+	"github.com/reesericci/esbuild/renamer"
+	"github.com/reesericci/esbuild/resolver"
+	"github.com/reesericci/esbuild/runtime"
+	"github.com/reesericci/esbuild/sourcemap"
+	"github.com/reesericci/esbuild/xxhash"
 )
 
 type linkerContext struct {
@@ -1949,7 +1949,7 @@ func (c *linkerContext) scanImportsAndExports() {
 						// importing code should not see "__esModule" while the requiring
 						// code should see "__esModule". This is an extremely complex
 						// and subtle set of bundler interop issues. See for example
-						// https://github.com/evanw/esbuild/issues/1591.
+						// https://github.com/reesericci/esbuild/issues/1591.
 						if record.Kind == ast.ImportRequire {
 							record.Flags |= ast.WrapWithToCJS
 							toCommonJSUses++
@@ -5313,7 +5313,7 @@ func (c *linkerContext) renameSymbolsInChunk(chunk *chunkInfo, filesInOrder []ui
 	// using these names in this case even if there is not a risk of a name
 	// collision because there is still a risk of node incorrectly detecting
 	// something in a nested scope as an top-level export. Here's a case where
-	// this happened: https://github.com/evanw/esbuild/issues/3544
+	// this happened: https://github.com/reesericci/esbuild/issues/3544
 	if c.options.OutputFormat == config.FormatCommonJS && c.options.Platform == config.PlatformNode {
 		reservedNames["exports"] = 1
 		reservedNames["module"] = 1

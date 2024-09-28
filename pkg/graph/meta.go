@@ -4,10 +4,10 @@ package graph
 // of the bundler but that is not required by the scan phase.
 
 import (
-	"github.com/evanw/esbuild/internal/ast"
-	"github.com/evanw/esbuild/internal/helpers"
-	"github.com/evanw/esbuild/internal/js_ast"
-	"github.com/evanw/esbuild/internal/logger"
+	"github.com/reesericci/esbuild/ast"
+	"github.com/reesericci/esbuild/helpers"
+	"github.com/reesericci/esbuild/js_ast"
+	"github.com/reesericci/esbuild/logger"
 )
 
 type WrapKind uint8

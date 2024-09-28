@@ -5,15 +5,15 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/evanw/esbuild/internal/ast"
-	"github.com/evanw/esbuild/internal/compat"
-	"github.com/evanw/esbuild/internal/config"
-	"github.com/evanw/esbuild/internal/helpers"
-	"github.com/evanw/esbuild/internal/js_ast"
-	"github.com/evanw/esbuild/internal/js_printer"
-	"github.com/evanw/esbuild/internal/logger"
-	"github.com/evanw/esbuild/internal/renamer"
-	"github.com/evanw/esbuild/internal/test"
+	"github.com/reesericci/esbuild/ast"
+	"github.com/reesericci/esbuild/compat"
+	"github.com/reesericci/esbuild/config"
+	"github.com/reesericci/esbuild/helpers"
+	"github.com/reesericci/esbuild/js_ast"
+	"github.com/reesericci/esbuild/js_printer"
+	"github.com/reesericci/esbuild/logger"
+	"github.com/reesericci/esbuild/renamer"
+	"github.com/reesericci/esbuild/test"
 )
 
 func expectParseErrorCommon(t *testing.T, contents string, expected string, options config.Options) {

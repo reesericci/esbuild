@@ -16,14 +16,14 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/evanw/esbuild/internal/bundler"
-	"github.com/evanw/esbuild/internal/cache"
-	"github.com/evanw/esbuild/internal/compat"
-	"github.com/evanw/esbuild/internal/config"
-	"github.com/evanw/esbuild/internal/fs"
-	"github.com/evanw/esbuild/internal/linker"
-	"github.com/evanw/esbuild/internal/logger"
-	"github.com/evanw/esbuild/internal/test"
+	"github.com/reesericci/esbuild/bundler"
+	"github.com/reesericci/esbuild/cache"
+	"github.com/reesericci/esbuild/compat"
+	"github.com/reesericci/esbuild/config"
+	"github.com/reesericci/esbuild/fs"
+	"github.com/reesericci/esbuild/linker"
+	"github.com/reesericci/esbuild/logger"
+	"github.com/reesericci/esbuild/test"
 )
 
 func es(version int) compat.JSFeature {

@@ -3,8 +3,8 @@ package api_test
 import (
 	"testing"
 
-	"github.com/evanw/esbuild/internal/test"
-	"github.com/evanw/esbuild/pkg/api"
+	"github.com/reesericci/esbuild/test"
+	"github.com/reesericci/esbuild/api"
 )
 
 func TestFormatMessages(t *testing.T) {

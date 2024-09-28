@@ -14,10 +14,10 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/evanw/esbuild/internal/cli_helpers"
-	"github.com/evanw/esbuild/internal/fs"
-	"github.com/evanw/esbuild/internal/logger"
-	"github.com/evanw/esbuild/pkg/api"
+	"github.com/reesericci/esbuild/cli_helpers"
+	"github.com/reesericci/esbuild/fs"
+	"github.com/reesericci/esbuild/logger"
+	"github.com/reesericci/esbuild/api"
 )
 
 func newBuildOptions() api.BuildOptions {

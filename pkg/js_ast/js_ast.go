@@ -801,7 +801,7 @@ type EJSXElement struct {
 // verbatim. One reason why this matters is because there is no canonical way
 // to interpret JSX text (Babel and TypeScript differ in what newlines mean).
 // Another reason is that some people want to do custom things such as this:
-// https://github.com/evanw/esbuild/issues/3605
+// https://github.com/reesericci/esbuild/issues/3605
 type EJSXText struct {
 	Raw string
 }

@@ -3,7 +3,7 @@ package cache
 import (
 	"sync"
 
-	"github.com/evanw/esbuild/internal/fs"
+	"github.com/reesericci/esbuild/fs"
 )
 
 // This cache uses information from the "stat" syscall to try to avoid re-

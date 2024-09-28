@@ -6,10 +6,10 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/evanw/esbuild/internal/compat"
-	"github.com/evanw/esbuild/internal/css_ast"
-	"github.com/evanw/esbuild/internal/css_lexer"
-	"github.com/evanw/esbuild/internal/helpers"
+	"github.com/reesericci/esbuild/compat"
+	"github.com/reesericci/esbuild/css_ast"
+	"github.com/reesericci/esbuild/css_lexer"
+	"github.com/reesericci/esbuild/helpers"
 )
 
 // These names are shorter than their hex codes

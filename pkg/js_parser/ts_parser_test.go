@@ -3,8 +3,8 @@ package js_parser
 import (
 	"testing"
 
-	"github.com/evanw/esbuild/internal/compat"
-	"github.com/evanw/esbuild/internal/config"
+	"github.com/reesericci/esbuild/compat"
+	"github.com/reesericci/esbuild/config"
 )
 
 func expectParseErrorTS(t *testing.T, contents string, expected string) {
@@ -1638,7 +1638,7 @@ var Foo = /* @__PURE__ */ ((Foo) => {
 bar = 0 /* FOO */;
 `)
 
-	// https://github.com/evanw/esbuild/issues/3205
+	// https://github.com/reesericci/esbuild/issues/3205
 	expectPrintedTS(t, "(() => { const enum Foo { A } () => Foo.A })", `() => {
   let Foo;
   ((Foo) => {
@@ -2685,7 +2685,7 @@ func TestTSInstantiationExpression(t *testing.T) {
 	expectParseErrorTS(t, "x<true>\nimport<T>('y')", "<stdin>: ERROR: Unexpected \"<\"\n")
 	expectParseErrorTS(t, "new x<true>\nimport<T>('y')", "<stdin>: ERROR: Unexpected \"<\"\n")
 
-	// See: https://github.com/evanw/esbuild/issues/2201
+	// See: https://github.com/reesericci/esbuild/issues/2201
 	expectParseErrorTS(t, "return Array < ;", "<stdin>: ERROR: Unexpected \";\"\n")
 	expectParseErrorTS(t, "return Array < > ;", "<stdin>: ERROR: Unexpected \">\"\n")
 	expectParseErrorTS(t, "return Array < , > ;", "<stdin>: ERROR: Unexpected \",\"\n")
@@ -3190,7 +3190,7 @@ func TestTSES5(t *testing.T) {
 	// Errors from lowering hypothetical arrow function arguments to ES5 should
 	// not leak out when backtracking. This comes up when parentheses are followed
 	// by a colon in TypeScript because the colon could deliminate an arrow
-	// function return type. See: https://github.com/evanw/esbuild/issues/2375.
+	// function return type. See: https://github.com/reesericci/esbuild/issues/2375.
 	expectPrintedTargetTS(t, 2015, "0 ? ([]) : 0", "0 ? [] : 0;\n")
 	expectPrintedTargetTS(t, 2015, "0 ? ({}) : 0", "0 ? {} : 0;\n")
 	expectPrintedTargetTS(t, 5, "0 ? ([]) : 0", "0 ? [] : 0;\n")

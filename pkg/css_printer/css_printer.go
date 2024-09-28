@@ -5,14 +5,14 @@ import (
 	"strings"
 	"unicode/utf8"
 
-	"github.com/evanw/esbuild/internal/ast"
-	"github.com/evanw/esbuild/internal/compat"
-	"github.com/evanw/esbuild/internal/config"
-	"github.com/evanw/esbuild/internal/css_ast"
-	"github.com/evanw/esbuild/internal/css_lexer"
-	"github.com/evanw/esbuild/internal/helpers"
-	"github.com/evanw/esbuild/internal/logger"
-	"github.com/evanw/esbuild/internal/sourcemap"
+	"github.com/reesericci/esbuild/ast"
+	"github.com/reesericci/esbuild/compat"
+	"github.com/reesericci/esbuild/config"
+	"github.com/reesericci/esbuild/css_ast"
+	"github.com/reesericci/esbuild/css_lexer"
+	"github.com/reesericci/esbuild/helpers"
+	"github.com/reesericci/esbuild/logger"
+	"github.com/reesericci/esbuild/sourcemap"
 )
 
 const quoteForURL byte = 0
@@ -1072,7 +1072,7 @@ func (p *printer) printTokens(tokens []css_ast.Token, opts printTokensOpts) bool
 				// substitution, then we can't be sure that it will form a valid URL
 				// token when unquoted (e.g. it may contain spaces). So we need to
 				// quote the unique key here just in case. For more info see this
-				// issue: https://github.com/evanw/esbuild/issues/3410
+				// issue: https://github.com/reesericci/esbuild/issues/3410
 				tryToAvoidQuote = false
 			} else if p.options.LineLimit > 0 && p.currentLineLength()+len(text) >= p.options.LineLimit {
 				tryToAvoidQuote = false

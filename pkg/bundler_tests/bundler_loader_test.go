@@ -3,9 +3,9 @@ package bundler_tests
 import (
 	"testing"
 
-	"github.com/evanw/esbuild/internal/bundler"
-	"github.com/evanw/esbuild/internal/compat"
-	"github.com/evanw/esbuild/internal/config"
+	"github.com/reesericci/esbuild/bundler"
+	"github.com/reesericci/esbuild/compat"
+	"github.com/reesericci/esbuild/config"
 )
 
 var loader_suite = suite{

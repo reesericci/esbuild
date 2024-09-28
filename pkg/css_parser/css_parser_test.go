@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/evanw/esbuild/internal/ast"
-	"github.com/evanw/esbuild/internal/compat"
-	"github.com/evanw/esbuild/internal/config"
-	"github.com/evanw/esbuild/internal/css_printer"
-	"github.com/evanw/esbuild/internal/logger"
-	"github.com/evanw/esbuild/internal/test"
+	"github.com/reesericci/esbuild/ast"
+	"github.com/reesericci/esbuild/compat"
+	"github.com/reesericci/esbuild/config"
+	"github.com/reesericci/esbuild/css_printer"
+	"github.com/reesericci/esbuild/logger"
+	"github.com/reesericci/esbuild/test"
 )
 
 func expectPrintedCommon(t *testing.T, name string, contents string, expected string, expectedLog string, loader config.Loader, options config.Options) {
@@ -203,7 +203,7 @@ func TestEscapes(t *testing.T) {
 	expectPrinted(t, "a { value: 10x\\2c }", "a {\n  value: 10x\\,;\n}\n", "")
 	expectPrinted(t, "a { value: 10x\\, }", "a {\n  value: 10x\\,;\n}\n", "")
 
-	// This must remain unescaped. See https://github.com/evanw/esbuild/issues/2677
+	// This must remain unescaped. See https://github.com/reesericci/esbuild/issues/2677
 	expectPrinted(t, "@font-face { unicode-range: U+0e2e-0e2f }", "@font-face {\n  unicode-range: U+0e2e-0e2f;\n}\n", "")
 
 	// RDeclaration
@@ -986,7 +986,7 @@ func TestSelector(t *testing.T) {
 	expectPrinted(t, "a:is( c ) {}", "a:is(c) {\n}\n", "")
 	expectPrinted(t, "a:is( c , d ) {}", "a:is(c, d) {\n}\n", "")
 
-	// These test cases previously caused a hang (see https://github.com/evanw/esbuild/issues/2276)
+	// These test cases previously caused a hang (see https://github.com/reesericci/esbuild/issues/2276)
 	expectPrinted(t, ":x(", ":x() {\n}\n", "<stdin>: WARNING: Unexpected end of file\n")
 	expectPrinted(t, ":x( {}", ":x({}) {\n}\n", "<stdin>: WARNING: Expected \")\" to go with \"(\"\n<stdin>: NOTE: The unbalanced \"(\" is here:\n")
 	expectPrinted(t, ":x(, :y() {}", ":x(, :y() {}) {\n}\n", "<stdin>: WARNING: Expected \")\" to go with \"(\"\n<stdin>: NOTE: The unbalanced \"(\" is here:\n")
@@ -2512,7 +2512,7 @@ func TestFont(t *testing.T) {
 	expectPrintedMangleMinify(t, "a { font: italic small-caps bold ultra-condensed 1rem/1.2 'aaa bbb' }", "a{font:italic small-caps 700 ultra-condensed 1rem/1.2 aaa bbb}", "")
 	expectPrintedMangleMinify(t, "a { font: italic small-caps bold ultra-condensed 1rem / 1.2 'aaa bbb' }", "a{font:italic small-caps 700 ultra-condensed 1rem/1.2 aaa bbb}", "")
 
-	// See: https://github.com/evanw/esbuild/issues/3452
+	// See: https://github.com/reesericci/esbuild/issues/3452
 	expectPrinted(t, "a { font: 10px'foo' }", "a {\n  font: 10px\"foo\";\n}\n", "")
 	expectPrinted(t, "a { font: 10px'123' }", "a {\n  font: 10px\"123\";\n}\n", "")
 	expectPrintedMangle(t, "a { font: 10px'foo' }", "a {\n  font: 10px foo;\n}\n", "")

@@ -17,11 +17,11 @@ import (
 	"sort"
 	"sync"
 
-	"github.com/evanw/esbuild/internal/ast"
-	"github.com/evanw/esbuild/internal/helpers"
-	"github.com/evanw/esbuild/internal/js_ast"
-	"github.com/evanw/esbuild/internal/logger"
-	"github.com/evanw/esbuild/internal/runtime"
+	"github.com/reesericci/esbuild/ast"
+	"github.com/reesericci/esbuild/helpers"
+	"github.com/reesericci/esbuild/js_ast"
+	"github.com/reesericci/esbuild/logger"
+	"github.com/reesericci/esbuild/runtime"
 )
 
 type entryPointKind uint8

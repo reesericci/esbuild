@@ -4,7 +4,7 @@ import (
 	"strings"
 
 	"github.com/reesericci/esbuild/css_ast"
-	"github.com/reesericci/esbuild/internal/css_lexer"
+	"github.com/reesericci/esbuild/css_lexer"
 )
 
 func turnPercentIntoNumberIfShorter(t *css_ast.Token) {

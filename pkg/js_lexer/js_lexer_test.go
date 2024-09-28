@@ -7,10 +7,10 @@ import (
 	"testing"
 	"unicode/utf8"
 
-	"github.com/evanw/esbuild/internal/config"
-	"github.com/evanw/esbuild/internal/helpers"
-	"github.com/evanw/esbuild/internal/logger"
-	"github.com/evanw/esbuild/internal/test"
+	"github.com/reesericci/esbuild/config"
+	"github.com/reesericci/esbuild/helpers"
+	"github.com/reesericci/esbuild/logger"
+	"github.com/reesericci/esbuild/test"
 )
 
 func assertEqualStrings(t *testing.T, a string, b string) {

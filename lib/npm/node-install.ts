@@ -25,7 +25,7 @@ function validateBinaryVersion(...command: string[]): void {
       // More info:
       // - https://snapcraft.io/ (what the Snap Store is)
       // - https://nodejs.org/dist/ (download the official version of node)
-      // - https://github.com/evanw/esbuild/issues/1711#issuecomment-1027554035
+      // - https://github.com/reesericci/esbuild/issues/1711#issuecomment-1027554035
       //
       stdio: 'pipe',
     }).toString().trim()

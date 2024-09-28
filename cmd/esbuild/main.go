@@ -10,7 +10,7 @@ import (
 
 	"github.com/reesericci/esbuild/api_helpers"
 	"github.com/reesericci/esbuild/logger"
-	"github.com/evanw/esbuild/pkg/cli"
+	"github.com/reesericci/esbuild/cli"
 )
 
 var helpText = func(colors logger.Colors) string {

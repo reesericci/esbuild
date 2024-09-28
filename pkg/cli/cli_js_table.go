@@ -2,7 +2,7 @@
 
 package cli
 
-import "github.com/evanw/esbuild/pkg/api"
+import "github.com/reesericci/esbuild/api"
 
 var validEngines = map[string]api.EngineName{
 	"chrome":  api.EngineChrome,

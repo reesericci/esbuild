@@ -3,9 +3,9 @@ package css_parser
 import (
 	"strings"
 
-	"github.com/reesericci/esbuild/internal/css_ast"
-	"github.com/reesericci/esbuild/internal/css_lexer"
-	"github.com/reesericci/esbuild/internal/logger"
+	"github.com/reesericci/esbuild/css_ast"
+	"github.com/reesericci/esbuild/css_lexer"
+	"github.com/reesericci/esbuild/logger"
 )
 
 const (

@@ -55,7 +55,7 @@ Note that there are some design decisions that have been made differently than o
 
 <p align="center"><img src="../images/build-pipeline.png" alt="Diagram of build pipeline" width="752"></p>
 
-The build pipeline has two main phases: scan and compile. These both reside in [bundler.go](../internal/bundler/bundler.go).
+The build pipeline has two main phases: scan and compile. These both reside in [bundler.go](../pkg/bundler/bundler.go).
 
 ### Scan phase
 
@@ -222,7 +222,7 @@ To handle this, references to ES6 imports use the special `EImportIdentifier` AS
 
 ### The runtime library
 
-This library contains support code that is needed to implement various aspects of JavaScript transformation and bundling. For example, it contains the `__commonJS()` helper function for wrapping CommonJS modules and the `__decorate()` helper function for implementing TypeScript decorators. The code lives in a single string in [runtime.go](../internal/runtime/runtime.go). It's automatically included in every build and esbuild's tree shaking feature automatically strips out unused code. If you need to add a helper function for esbuild to call, it should be added to this library.
+This library contains support code that is needed to implement various aspects of JavaScript transformation and bundling. For example, it contains the `__commonJS()` helper function for wrapping CommonJS modules and the `__decorate()` helper function for implementing TypeScript decorators. The code lives in a single string in [runtime.go](../pkg/runtime/runtime.go). It's automatically included in every build and esbuild's tree shaking feature automatically strips out unused code. If you need to add a helper function for esbuild to call, it should be added to this library.
 
 ### Tree shaking
 

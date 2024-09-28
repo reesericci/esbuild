@@ -3,11 +3,11 @@ package css_printer
 import (
 	"testing"
 
-	"github.com/evanw/esbuild/internal/ast"
-	"github.com/evanw/esbuild/internal/config"
-	"github.com/evanw/esbuild/internal/css_parser"
-	"github.com/evanw/esbuild/internal/logger"
-	"github.com/evanw/esbuild/internal/test"
+	"github.com/reesericci/esbuild/ast"
+	"github.com/reesericci/esbuild/config"
+	"github.com/reesericci/esbuild/css_parser"
+	"github.com/reesericci/esbuild/logger"
+	"github.com/reesericci/esbuild/test"
 )
 
 func expectPrintedCommon(t *testing.T, name string, contents string, expected string, options Options) {
