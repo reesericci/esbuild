@@ -1,4 +1,4 @@
-// This file generates "internal/compat/css_table.go"
+// This file generates "compat/css_table.go"
 
 import fs = require('fs')
 import { Engine, CSSFeature, VersionRange, VersionRangeMap, CSSPrefixMap, PrefixData, CSSProperty } from './index'
@@ -57,13 +57,13 @@ export const generateTableForCSS = (map: VersionRangeMap<CSSFeature>, prefixes: 
     }
   }
 
-  fs.writeFileSync(__dirname + '/../internal/compat/css_table.go',
+  fs.writeFileSync(__dirname + '/../pkg/compat/css_table.go',
     `${generatedByComment}
 
 package compat
 
 import (
-\t"github.com/evanw/esbuild/internal/css_ast"
+\t"github.com/reesericci/esbuild/css_ast"
 )
 
 type CSSFeature uint16
