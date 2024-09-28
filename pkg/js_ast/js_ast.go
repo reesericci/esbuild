@@ -3,8 +3,8 @@ package js_ast
 import (
 	"strconv"
 
-	"github.com/evanw/esbuild/internal/ast"
-	"github.com/evanw/esbuild/internal/logger"
+	"github.com/reesericci/esbuild/ast"
+	"github.com/reesericci/esbuild/logger"
 )
 
 // Every module (i.e. file) is parsed into a separate AST data structure. For
